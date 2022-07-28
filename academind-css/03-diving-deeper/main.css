@@ -27,7 +27,8 @@ body {
 
 .main-nav {
   text-align: right;
-  width: calc(100% - 74px); /* 49px = width of logo container */
+  padding-right: 20px;
+  width: calc(100% - 94px); /* 49px = width of logo container */
 }
 
 .main-nav__items {
@@ -36,6 +37,11 @@ body {
   list-style: none;
 }
 
+.main-nav__item > a {
+  text-decoration: none;
+  margin-left: 16px;
+  color: #0e4f1f;
+}
 /* Product Section */
 
 #product-overview {
