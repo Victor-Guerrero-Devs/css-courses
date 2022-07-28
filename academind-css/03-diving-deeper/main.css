@@ -2,6 +2,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Header */
+
+.main-header {
+  width: 100%;
+  background: #2ddf5c;
+  padding: 8px 16px;
+}
+
 #product-overview {
   background: #ff1b68;
   width: 100%;
@@ -17,7 +25,3 @@ body {
   color: white;
   font-family: "Anton", sans-serif;
 }
-
-/* h1 {
-    font-family: sans-serif;
-} */
