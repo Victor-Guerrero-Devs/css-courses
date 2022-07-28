@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 /* Header */
@@ -10,15 +11,23 @@ body {
   padding: 8px 16px;
 }
 
+.main-header__brand {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+}
+
 .main-nav,
 .main-nav__item,
 .main-header > div {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-nav {
   text-align: right;
-  width: calc(100% - 54px); /* 49px = width of logo container */
+  width: calc(100% - 74px); /* 49px = width of logo container */
 }
 
 .main-nav__items {
