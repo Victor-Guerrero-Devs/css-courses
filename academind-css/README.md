@@ -2,20 +2,22 @@
 
 ## Content 
 
-1. Beginner 
+### 1. Beginner 
 - Basics 
 - Diving Deeper 
+	- box model
+	- display property
 - Selectors 
 - Positioning 
 
-2. Advanced 
+### 2. Advanced 
 - bg images
 - units 
 - JS & CSS
 - Styling Forms 
 - Typography 
 
-3. Expert
+### 3. Expert
 - Flexbox
 - Grid
 - Transformations & Animations
