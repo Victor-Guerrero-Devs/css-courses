@@ -52,4 +52,29 @@ a.highlighted { color: yellow; }
 Normally, `a.highlighted` would take priority for the color property because it has higher 
 specificity but, since we added `!important`, `a` takes priority 
 
+### The Pseudo-class :not()
 
+
+```css
+a:not(.highlighted) { color: white; }
+
+a.highlighted { color: yellow; }
+```
+
+The first selector is targetting every anchor element that does not have the `highlighted`
+class. 
+
+This is all `:not()` does. Whatever it has in its parantheses, it will not target it. 
+
+Generally, you should just use specficity instead of `:not()` because of preformance as well 
+as readability 
+
+```css
+a { color: white; }
+
+a.highlighted { color: yellow; }
+```
+
+This does the same job as the first snippet but better. 
+
+Nevertheless, there are some specific cases in which `:not()` is very useful. 
