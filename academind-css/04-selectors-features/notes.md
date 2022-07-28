@@ -42,3 +42,14 @@ of a section on your webpage, e.g. `<section id="product-overview">`
 
 - used to override specficity 
 - normally should be avoided or you'll end up with spaghetti CSS 
+
+```css
+a { color: white !important; }
+
+a.highlighted { color: yellow; }
+```
+
+Normally, `a.highlighted` would take priority for the color property because it has higher 
+specificity but, since we added `!important`, `a` takes priority 
+
+
