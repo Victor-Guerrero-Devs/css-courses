@@ -10,6 +10,25 @@ body {
   padding: 8px 16px;
 }
 
+.main-nav,
+.main-nav__item,
+.main-header > div {
+  display: inline-block;
+}
+
+.main-nav {
+  text-align: right;
+  width: calc(100% - 49px); /* 49px = width of logo container */
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Product Section */
+
 #product-overview {
   background: #ff1b68;
   width: 100%;
