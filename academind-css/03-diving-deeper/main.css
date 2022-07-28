@@ -18,7 +18,7 @@ body {
 
 .main-nav {
   text-align: right;
-  width: calc(100% - 49px); /* 49px = width of logo container */
+  width: calc(100% - 54px); /* 49px = width of logo container */
 }
 
 .main-nav__items {
