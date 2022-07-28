@@ -37,3 +37,8 @@ Ids should be reserved for targetting elements in JS or for linking to sections
 on your webpage. 
 - since you can only use IDs once, they can also be used to mark the main container 
 of a section on your webpage, e.g. `<section id="product-overview">`
+
+### !important 
+
+- used to override specficity 
+- normally should be avoided or you'll end up with spaghetti CSS 
