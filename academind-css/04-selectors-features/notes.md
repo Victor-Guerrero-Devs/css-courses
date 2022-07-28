@@ -28,3 +28,12 @@ a.active { }
 ```
 
 - the above targets any anchor elements that have the active class
+
+### CSS Class Selectors vs ID Selectors 
+
+90% of the time, you should be using classes to style HTML elements. 
+
+Ids should be reserved for targetting elements in JS or for linking to sections 
+on your webpage. 
+- since you can only use IDs once, they can also be used to mark the main container 
+of a section on your webpage, e.g. `<section id="product-overview">`
