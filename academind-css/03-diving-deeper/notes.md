@@ -15,3 +15,4 @@ We use `inline-block` to structure our navbar, i.e. logo on the left hand side a
 
 - with flexbox, we can do the same job a lot easier
 - nevertheless, this is the oldschool way
+- we use `width: calc(100% - 54px);` in `.main-nav { }` to let the nav links take up all the space not taken up by the logo thereby allowing them to stay on the same line (hacky but works for now)
