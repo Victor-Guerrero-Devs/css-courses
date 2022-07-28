@@ -78,3 +78,11 @@ a.highlighted { color: yellow; }
 This does the same job as the first snippet but better. 
 
 Nevertheless, there are some specific cases in which `:not()` is very useful. 
+
+### CSS Browser Support 
+
+Most modern browsers like Chrome and Firefox are quick to support new CSS stuff. 
+
+However, older browsers like Internet Explorer do not.
+
+Later, we will learn how to get around these issues.  
