@@ -79,3 +79,14 @@ make sure to increase z-index if any elements start going over the nav bar as yo
 element to absolute 
 - now we can move the badge around freely inside of the package container with `top, bottom, left, right`
 - 
+
+## Relative Positioning 
+
+- if an element has `position: relative;` it means that it can be moved with `top, bottom, left, right`
+- unlike absolute, other elements act as if it is still in its original position 
+- therefore, even if you move it off the page, not a single element will come and take over its original position 
+
+- secondly, when you move it w/ `top, bottom, left, right`, this is in relation to its original position, not to its container 
+- in contrast, `position: absolute;` moves in relation to its container not to its original position 
+
+
