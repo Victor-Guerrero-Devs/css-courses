@@ -32,4 +32,18 @@ This will ensure that your elements have limits to how small they can get on mob
 
 This is essential for responsive design
 
+## em vs rem 
 
+em is too much of a headache so avoid using it. 
+
+stick to rem b/c 
+- responsive to the user's browser font settings 
+- overall responsive 
+
+use `rem` especially for font-size and if you wish for padding and margin as well 
+- if you do use it for padding and margin as well, these will also be responsive 
+to the user's browser font size setting 
+- nevertheless, not necessary to aim for that much responsiveness 
+- it is equally fine just to use pixels for margin/height 
+
+**Conclusion:** use rem for font-size (and maybe padding/margins) and pixels for anything else 
