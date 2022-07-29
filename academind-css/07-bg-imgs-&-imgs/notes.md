@@ -75,5 +75,16 @@ THe images themselves have the class `testimonial__image`
 Give them a box shadow to give get the 3-d look 
 
 
+## Gradients 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+
+You can use these gradients to replace background images
+
+In a sense, they are a fancier version of using `background-color: red;`
+
+Instead you would use `background-image: linear-gradient(red, white);`
+
+Besides linear gradients, you can also use radial gradients which lets you make more complicated color transistions 
 
 
