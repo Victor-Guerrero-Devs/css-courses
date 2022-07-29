@@ -6,6 +6,7 @@ We have graduated the basics section. We are now in the advanced section.
 
 - background property 
 - using images and background images 
+- add a customers page
 - gradients 
 - filters 
 
@@ -53,4 +54,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin
 You can determine the image's border
  - does it start with the container's outside border? inside border? content border? 
  
+## New Page: Customers
+
+Here we will add our testimonials with images from our "customers" 
+
+Create a directory called `customers` and create a new html file within it 
+
+As with the package page, copy and paste the header and footer HTML into the new customers page.
+
+We will also create a new CSS file for styles specific to the customers page in the same directory 
+
+  
 
