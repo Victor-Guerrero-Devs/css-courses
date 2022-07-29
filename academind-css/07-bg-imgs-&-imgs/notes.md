@@ -87,4 +87,12 @@ Instead you would use `background-image: linear-gradient(red, white);`
 
 Besides linear gradients, you can also use radial gradients which lets you make more complicated color transistions 
 
+## Stacking Backgrounds 
+
+It is possible to stack multiple bg images, solid colors, and gradients as the same background. Only one of the bg images can show up at a time however. 
+
+Usually, solid colors are used as back ups should the image fail to load. 
+
+Gradients are usually used with bg images to give them give them an overlay (make sure to use `rgba()` for the color so you can tweak the opacity) 
+
 
