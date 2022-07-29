@@ -108,4 +108,9 @@ One of the most popular ones is `filter: grayscale(X%)`
   - 100% = straight up black and white 
   - 0% = zero change 
   
+## SVGs
+
+We can manipulate the size by: 
+	- increasing or decreasing the padding of its container 
+	
 
