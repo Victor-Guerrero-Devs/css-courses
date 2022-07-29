@@ -34,8 +34,48 @@ nav {
   left: 0;
   margin: 0;
   box-sizing: border-box; 
+  z-index: 1; 
 }
 ```
 
+make sure to increase z-index if any elements start going over the nav bar as you are scrolling down
 
+### fixed bg img snippet 
 
+- another popular use case is using it for bg imgs for sections 
+- the trick is to reduce its z-index value so the other elements go on top 
+
+```html
+<section id="packages-overview">
+  <div class="bg-img"> </ div> 
+  <!-- rest of the elements go below --> 
+</ section>   
+```
+
+- the bg img gets its own div container and goes on top of everything else 
+
+```css
+.bg-img {
+  background: url("./images/blue_sky.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed; 
+  z-index: -100; 
+}
+```
+
+- now that bg img will cover everything within the packages section with all the other elements sitting on top
+
+## Absolute + Relative 
+
+- absolute works liked fixed
+- element is taken out of the flow and can be moved around with `top, bottom, left, right`
+- however, you need to make sure the element's container uses `property: relative;` or that element will pop out of its container 
+- it will treat the body element as its parent 
+
+### building a badge for a package 
+
+- as stated before, we need to set the package container to relative and the badge 
+element to absolute 
+- now we can move the badge around freely inside of the package container with `top, bottom, left, right`
+- 
