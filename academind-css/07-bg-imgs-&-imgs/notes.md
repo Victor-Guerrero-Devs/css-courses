@@ -46,4 +46,11 @@ With this property, you can decide which part of the image will be sacrificed in
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
 
+### background-origin 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin
+
+You can determine the image's border
+ - does it start with the container's outside border? inside border? content border? 
+ 
 
