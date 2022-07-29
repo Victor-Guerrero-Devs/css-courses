@@ -95,4 +95,17 @@ Usually, solid colors are used as back ups should the image fail to load.
 
 Gradients are usually used with bg images to give them give them an overlay (make sure to use `rgba()` for the color so you can tweak the opacity) 
 
+## Filters
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+
+CSS now has the power of PhotoShop (to some extent) 
+
+We can use CSS to apply filters to images without the need of photoshop. 
+
+One of the most popular ones is `filter: grayscale(X%)`
+  - mainly used on bg images for containers to give more contrast to the text content 
+  - 100% = straight up black and white 
+  - 0% = zero change 
+  
 
