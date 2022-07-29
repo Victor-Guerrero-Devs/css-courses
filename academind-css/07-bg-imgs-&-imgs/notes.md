@@ -1,6 +1,6 @@
 # 07. Images and BG Images 
 
-We have graduated the basics section. We are now in the advanced section. 
+We have graduated from the basics section. We are now in the advanced section. 
 
 ## Content 
 
@@ -64,5 +64,16 @@ As with the package page, copy and paste the header and footer HTML into the new
 
 We will also create a new CSS file for styles specific to the customers page in the same directory 
 
-  
+### Customer images 
+
+First we wrap them in a div with the class `testimonial__image-container`
+- the image container should take up 70% of their testimonial container 
+
+THe images themselves have the class `testimonial__image`
+- have the images take 100% of their image container 
+
+Give them a box shadow to give get the 3-d look 
+
+
+
 
