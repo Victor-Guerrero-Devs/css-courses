@@ -38,4 +38,12 @@ An equivalent to that would be `background-size: 100%;` which says the image wil
 
 `background-size: 500px 200px;` you can also pass a second value which affects the height therefore this means the image will be 500px wide and 200px tall 
 
+### background-position
+
+Imagine you have a large painting and a sqaure frame. The painting is bigger than the frame so some sacrifices will have to made. 
+
+With this property, you can decide which part of the image will be sacrificed in order to fit into the frame. 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+
 
