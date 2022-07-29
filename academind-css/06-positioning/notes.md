@@ -89,4 +89,26 @@ element to absolute
 - secondly, when you move it w/ `top, bottom, left, right`, this is in relation to its original position, not to its container 
 - in contrast, `position: absolute;` moves in relation to its container not to its original position 
 
+## Relative Positioning and Overflow 
+
+- since elements with `position: relative;` can be moved anywhere, even outside of their 
+container, you need to add `overflow: hidden;` to its container. 
+- this will prevent any element to be displayed if it moves beyond the confines of its container 
+
+## Sticky Positioning 
+
+- this is a hybrid of relative and fixed 
+- you apply this to an element and add `top, bottom, left, right`
+- whichever one you add a value to will dictate its behavior 
+- like fixed, you can force elements not to change position even if the page is being scrolled 
+- unlike fixed, this fixed position will end as soon as the element hits the limit of its container 
+
+- very new CSS feature
+- not even Chrome fully supports it yet 
+
+### Use case 
+
+- having the title of an article/section stick to the top as a user scrolls down to read 
+- title disappears at the end of the article container and the next one picks up on the behavior 
+
 
