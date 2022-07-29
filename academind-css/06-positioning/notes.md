@@ -111,4 +111,12 @@ container, you need to add `overflow: hidden;` to its container.
 - having the title of an article/section stick to the top as a user scrolls down to read 
 - title disappears at the end of the article container and the next one picks up on the behavior 
 
+## Stacking Context 
 
+- refers to the z-index hierarchy in self-contained containers 
+- an element's z-index does not compete with those that are outside of its container 
+- only containers' z-index will compete with other containers' 
+- helps to know this if you do not know why an element will not go where you want it to 
+on the z-index 
+- more than likely you are trying to overlay two elements that have their own stacking context 
+- solution is to up the z-index of X container 
