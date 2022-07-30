@@ -63,3 +63,20 @@ Input eles are inline by default. Therefore we change them to block so each one 
 ```
 
 With this, we select any input element inside of `.signup-form` that has the type checkbox. You can get more fancy with this but just look it up on mdn.
+
+### media query
+
+```css
+@media (min-width: 40rem) {
+  .signup-form {
+    margin: auto;
+    width: 25rem;
+  }
+}
+```
+
+Since we are using mobile first, the form takes up 100% of its container but has a padding of 1rem so it won't touch the edges of the mobile screen.
+
+Once it reaches ~640 pixels in width, this activates and limits its width to 400 pixels.
+
+Also, with `margin: auto;` the form container is centered horizontally on the page.
