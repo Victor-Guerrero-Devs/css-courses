@@ -53,6 +53,17 @@ This is the styling for the component. As you can see, we use the fixed position
 
 As stated before, JS allows us to change not only the CSS applied to our HTML elements but also the HTML elements themselves. 
 
-This is so b/c we can use JS to work with the DOM, i.e. the browser's virtual representation of our HTML file. 
+This is so b/c JS executes after the browser has loaded our HTML file and we can use JS to work with the DOM, i.e. the browser's virtual representation of our HTML file. 
 
 Therefore, w/ JS, we will change the display property of our backdrop from none to block
+
+## Making it work 
+
+1. make variables of the backdrop element and modal 
+2. make a node list variable for the plan buttons 
+3. run a for loop for the node list 
+4. add an event listener to each one that changes the display to block for both the backdrop and modal 
+5. make another variable for the no button on the modal 
+6. make an event listener for the no button after the for loop
+7. if clicked, switch the display back to none for both the backdrop and modal 
+  - if the yes button is clicked, (remember it is an anchor element) the user will just be taken to a new page (which will be made later) 
