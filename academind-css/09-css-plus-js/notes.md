@@ -73,3 +73,26 @@ Therefore, w/ JS, we will change the display property of our backdrop from none 
 Later in the course, we will pretty this up when we make the site mobile friendly. 
 
 For now we will implement the hamburger and the navbar
+
+### Hamburger HTML 
+
+Add this in the `.main-header` in front of `main-header__brand`
+
+```html
+<div>
+  <button class="toggle-button">
+    <span class="toggle-button__bar"></span>
+    <span class="toggle-button__bar"></span>
+    <span class="toggle-button__bar"></span>
+   </button>
+   <a href="index.html" class="main-header__brand">
+      <img src="images/uhost-icon.png" alt="uHost - Your favorite hosting company">
+    </a>
+</div>
+```
+
+### Hamburger CSS 
+
+This goes in `shared.css`
+
+
