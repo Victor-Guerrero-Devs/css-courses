@@ -68,3 +68,5 @@ Desktop monitors 1660px+ width (mine is 1920px)
 Laptops 1024 - 1660px width (can go above 1920px)
 
 Since you should build for mobile first, your media queries should use `min-width`, i.e. when viewport width is at least X, and should have them for tablets, laptops, desktops and even smart TVs
+
+start w/ video 152
