@@ -95,4 +95,59 @@ Add this in the `.main-header` in front of `main-header__brand`
 
 This goes in `shared.css`
 
+```css
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+```
+
+### Mobile nav HTML
+
+This goes directly after the `.main-header` as a sibling 
+
+```html
+<nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="packages/index.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="customers/index.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="start-hosting/index.html">Start Hosting</a>
+            </li>
+        </ul>
+</nav>
+```
+
+### Mobile nav CSS
+
+This also goes in `shared.css`
+
+```css
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+```
+
+Notice how the display is set to none. This will be changed with JS when the burger is clicked. 
+
+As you can see, like the overlay, this is set to the top left corner of the screen and will take up 80% of the viewport width. 
+
+However, since its display is set to none, it won't show until it is changed to block w/ JS later 
+
 
