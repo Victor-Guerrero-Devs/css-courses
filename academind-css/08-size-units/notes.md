@@ -81,4 +81,12 @@ Display is set to none so you can use JS to change it for whatever event that tr
 
 Everything else is self-evident 
 
+## the right unit for the right properties 
+
+font-size: use rem 
+
+margin/padding/border: use pixels or rem if you want it to scale along with font-size if a user has set their browser font-size bigger or smaller 
+
+width/height: use % for components in containers || use vh/vw for section containers 
+
 
