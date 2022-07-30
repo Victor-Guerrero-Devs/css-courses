@@ -32,7 +32,7 @@ With this simple addition (comes with the emmet boilerplate), our CSS will only 
 
 We use these in our CSS files to activate a style change at X viewport width.
 
-It seems that using REM or EM over pixels is best because if a user has changed their default font-size via browser settings, breakpoints won't work as expected if they are set with pixels instead of REM or EM.
+It seems that using REM or EM over pixels is best because if a user has changed their default font-size via browser settings, breakpoints won't work as expected (i.e. they may fire off prematurely or late, thereby messing up the layout, depending if the browser settings for font size is smaller or larger than the default) if they are set with pixels instead of REM or EM.
 
 Therefore use REM or EM when setting your media queries
 
@@ -51,3 +51,20 @@ That equals to 726px (typical tablet breakpoint)
 @media screen and (min-width: 726px) {
 }
 ```
+
+## Breakpoints
+
+Use this website: https://www.mydevice.io/ || https://screensiz.es/macbook-air-11-inch-late-2010-mid-2012
+
+- lets you know about the specifics of your current device
+- allows you to see the specs of modern mobile phones and tablets
+
+Most modern mobile devices have a physical width of about 325 - 550 pixels.
+
+Most tablets range from 726 - 1024 pixels
+
+Desktop monitors 1660px+ width (mine is 1920px)
+
+Laptops 1024 - 1660px width (can go above 1920px)
+
+Since you should build for mobile first, your media queries should use `min-width`, i.e. when viewport width is at least X, and should have them for tablets, laptops, desktops and even smart TVs
