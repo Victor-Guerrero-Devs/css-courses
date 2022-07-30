@@ -33,3 +33,33 @@
   </form>
 </main>
 ```
+
+## CSS Form
+
+```css
+.signup-form label,
+.signup-form input,
+.signup-form select {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+```
+
+Input eles are inline by default. Therefore we change them to block so each one stacks on top of the other
+
+### attribute selectors
+
+```css
+.signup-form input[type="checkbox"] {
+  border: 1px solid #ccc;
+  background: white;
+  width: 1rem;
+  height: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+```
+
+With this, we select any input element inside of `.signup-form` that has the type checkbox. You can get more fancy with this but just look it up on mdn.
