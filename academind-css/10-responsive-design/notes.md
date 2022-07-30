@@ -21,3 +21,9 @@ This also has negatives like images looking bad if they are low resolution (alth
 Another problem is we usually set media queries for mobile at ~450px width. As a consequence, our media query will never activate on an iPhone 8 if its width is at 1125 pixels.
 
 We can solve this with one simple meta tag.
+
+## Viewport Meta Tag
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+With this simple addition (comes with the emmet boilerplate), our CSS will only take the hardware pixels into account instead of the software pixels.
