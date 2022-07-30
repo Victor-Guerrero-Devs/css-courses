@@ -67,3 +67,9 @@ Therefore, w/ JS, we will change the display property of our backdrop from none 
 6. make an event listener for the no button after the for loop
 7. if clicked, switch the display back to none for both the backdrop and modal 
   - if the yes button is clicked, (remember it is an anchor element) the user will just be taken to a new page (which will be made later) 
+  
+## Mobile navbar HTML and CSS
+
+Later in the course, we will pretty this up when we make the site mobile friendly. 
+
+For now we will implement the hamburger and the navbar
