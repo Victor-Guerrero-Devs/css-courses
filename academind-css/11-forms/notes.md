@@ -80,3 +80,16 @@ Since we are using mobile first, the form takes up 100% of its container but has
 Once it reaches ~640 pixels in width, this activates and limits its width to 400 pixels.
 
 Also, with `margin: auto;` the form container is centered horizontally on the page.
+
+### validation feedback
+
+```css
+.signup-form :invalid {
+  border-color: red !important;
+  background: #faacac;
+}
+```
+
+This selects any element within `.signup-form` that has the psuedo-element `invalid`
+
+HTML already has this built-in so it isn't really necessary to use fancy JS to apply CSS classes if an input ends up being invalid
