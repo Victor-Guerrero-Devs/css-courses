@@ -47,3 +47,38 @@ to the user's browser font size setting
 - it is equally fine just to use pixels for margin/height 
 
 **Conclusion:** use rem for font-size (and maybe padding/margins) and pixels for anything else 
+
+## vh & vw 
+
+Unlike %, these always apply to the bigger context, i.e. the viewport 
+
+Therefore, this is perfect for modals that must cover 100% of the viewport in both dimensions
+
+### Modal Snippet 
+
+HTML
+` <div class="backdrop"></div>`
+
+This goes before everything else, i.e. the first element after the opening body tag 
+
+CSS
+```css
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+```
+
+Position fixed so it goes over everything else and so you can use top and left to position it over everything without worrying about margin collapse 
+
+Display is set to none so you can use JS to change it for whatever event that triggers it 
+
+Everything else is self-evident 
+
+
