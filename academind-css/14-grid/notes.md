@@ -206,3 +206,9 @@ These also go in the grid container.
 `justify-content`: this aligns the entire grid container on the horizontal axis
 
 `align-content`: on the vertical axis
+
+## responsive grids
+
+very ez to do.
+
+just make a media query and change the `grid-template-areas` as well as the number of rows and columns in the grid container if needed.
