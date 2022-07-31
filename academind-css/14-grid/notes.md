@@ -212,3 +212,17 @@ These also go in the grid container.
 very ez to do.
 
 just make a media query and change the `grid-template-areas` as well as the number of rows and columns in the grid container if needed.
+
+## explicit vs implicit grids
+
+so far we have been making explicit grids, i.e. we control every little aspect of it
+
+implicit grids are those that are created on the fly, usually w/ JS populating the DOM with new stuff (think of a new div being generated for each computer monitor displaying an image, name, and price that matchs a user's query)
+
+we can control these implicit grids with the following
+
+- grid-auto-rows
+- grid-auto-columns
+- grid-auto-flow
+
+These 3 go inside of the grid container
