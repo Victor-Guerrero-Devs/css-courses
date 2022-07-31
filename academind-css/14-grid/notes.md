@@ -16,6 +16,14 @@
 
 sidenote: Firefox has better debugging tools for grid than Chrome
 
+## grid-items
+
+Remember, the grid-items should not have their width or height hard coded.
+
+They inherit those values from the columns and rows they inhabit.
+
+Therefore, if a grid-item's column is 200px and its row is 400px, the grid-item's width is 200px and its height is 400px
+
 ## minmax()
 
 This should be easy.
