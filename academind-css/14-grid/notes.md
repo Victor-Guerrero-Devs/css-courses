@@ -226,3 +226,11 @@ we can control these implicit grids with the following
 - grid-auto-flow
 
 These 3 go inside of the grid container
+
+## auto-fit and auto-fill
+
+these are two values you can use within grid container as an argument instde of the repeat() function.
+
+check out how they work on mdn
+
+they automatically provide responsive grid items in relation to the viewport width since they can drop items into a new row if things get too small
