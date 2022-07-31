@@ -134,4 +134,39 @@ remember to use the same value for rows and columns for best design practice
 
 ## named template areas
 
-start on vid 225
+`grid-template-areas` goes inside of the flex container
+
+`grid-area` goes inside of the flex item
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main"
+    "footer footer footer footer";
+}
+
+.grid-item-1 {
+  grid-area: header;
+}
+
+.grid-item-2 {
+  grid-area: aside;
+}
+
+.grid-item-3 {
+  grid-area: main;
+}
+
+.grid-item-4 {
+  grid-area: footer;
+}
+```
+
+this is the best way to make outlines or layouts of your web page.
