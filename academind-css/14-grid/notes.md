@@ -188,3 +188,13 @@ Use named template areas to fit the header, main, footer
 ```
 
 This function makes sure that the column/row does not exceed whatever value you pass into it by squeezing the content into the provided value.
+
+## justify-items align-items
+
+Both of these go inside of the grid container
+
+`justify-items`: positions grid items along the horizontal axis
+
+`align-items`: positions grid items along the vertical axis
+
+Both of these are set by default to `stretch` which is why they automatically cover the entire area of their columns/rows
