@@ -123,3 +123,7 @@ this goes inside of the grid container and allows you to set a gap between the i
 remember to use the same value for rows and columns for best design practice
 
 `.grid-container { grid-gap: 2rem; }`
+
+## named template areas
+
+start on vid 225
