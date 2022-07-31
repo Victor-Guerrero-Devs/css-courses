@@ -198,3 +198,11 @@ Both of these go inside of the grid container
 `align-items`: positions grid items along the vertical axis
 
 Both of these are set by default to `stretch` which is why they automatically cover the entire area of their columns/rows
+
+## justify-content align-content
+
+These also go in the grid container.
+
+`justify-content`: this aligns the entire grid container on the horizontal axis
+
+`align-content`: on the vertical axis
