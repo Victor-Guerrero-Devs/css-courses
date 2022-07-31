@@ -21,3 +21,13 @@ We can instead use flexbox for a much easier experience and cleaner CSS.
 1. apply `display: flex;` to a container
 2. all of the elements nested within it are now `flex-items`
 3. you can now arrange the items easily
+
+## flex-order
+
+This property is used within flex-items.
+
+All flex-items have this property set to 0 therefore they appear in the order in which they are declared in the HTML file.
+
+If you were to change one of them to `flex-order: 1;`, it will automatically be the last one (b/c all of them are at 0)
+
+If you were to change one of the to `flex-order: -1`, it will automatically be the first one (same logic).
