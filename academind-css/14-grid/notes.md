@@ -234,3 +234,13 @@ these are two values you can use within grid container as an argument instde of 
 check out how they work on mdn
 
 they automatically provide responsive grid items in relation to the viewport width since they can drop items into a new row if things get too small
+
+## flexbox vs grid
+
+flexbox is for 1 dimensional things, i.e. either things are in a row or in a column
+
+grids are for 2 dimensional things, i.e. things are both in rows and columns
+
+therefore, grid excels at the overall webpage layout as well as 2-d components likre an image gallery or form
+
+flexbox excels in 1 dimensional components like navbar or payment plans that are either in a row for desktop or in a column for tablet/mobile
