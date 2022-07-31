@@ -170,3 +170,21 @@ remember to use the same value for rows and columns for best design practice
 ```
 
 this is the best way to make outlines or layouts of your web page.
+
+## Grid on this Project
+
+We will use grid to sustain our layout. Although this has already been achieved, we will look at how we can make it w/ grid.
+
+As for the modal, mobile nav menu, overlay, these will not be accounted for grid items because their display property is not `static` so they ignored even if their parent container is using grid.
+
+Use named template areas to fit the header, main, footer
+
+## fit-content()
+
+```css
+.grid-container {
+  grid-template-columns: 1fr 2fr fit-content(8rem);
+}
+```
+
+This function makes sure that the column/row does not exceed whatever value you pass into it by squeezing the content into the provided value.
