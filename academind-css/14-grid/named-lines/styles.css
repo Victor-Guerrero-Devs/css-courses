@@ -1,0 +1,22 @@
+body {
+  padding: 2rem;
+  background-color: blueviolet;
+}
+
+.container {
+  background-color: rgb(187, 150, 223);
+  border: 3px solid whitesmoke;
+  display: grid;
+  grid-template-columns: [start-line] 200px [middle-line] 200px [end-line] 300px [very-end];
+}
+
+.grid-item {
+  background-color: cornsilk;
+  height: 6rem;
+  border: solid 1px lightcoral;
+}
+
+.a {
+  grid-column-start: start-line;
+  grid-column-end: very-end;
+}
