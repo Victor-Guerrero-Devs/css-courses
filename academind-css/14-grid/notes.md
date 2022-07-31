@@ -74,3 +74,26 @@ This is an alternative to the above using names rather than grid row/column numb
 As you can see, we can control the position of `grid-item a` using the names we created in `grid-template-columns`
 
 See the directory `named-lines` to see it in action
+
+## grid-column/row shorthand
+
+instead of using
+
+```css
+.a {
+  grid-column-start: start-line;
+  grid-column-end: very-end;
+}
+```
+
+You use the shorthand
+
+```css
+.a {
+  grid-column: start-line / very-end;
+}
+```
+
+Works the same way for `grid-row`
+
+Remember, these go inside of the flex items
