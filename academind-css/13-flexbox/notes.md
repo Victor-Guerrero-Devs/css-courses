@@ -31,3 +31,9 @@ All flex-items have this property set to 0 therefore they appear in the order in
 If you were to change one of them to `flex-order: 1;`, it will automatically be the last one (b/c all of them are at 0)
 
 If you were to change one of the to `flex-order: -1`, it will automatically be the first one (same logic).
+
+## align-self
+
+This property is used within flex-items and overrides whatever is in `align-items` within the flex container.
+
+Therefore it works off the cross axis (vertical in rows, horizontal in columns)
