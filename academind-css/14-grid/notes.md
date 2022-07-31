@@ -97,3 +97,19 @@ You use the shorthand
 Works the same way for `grid-row`
 
 Remember, these go inside of the flex items
+
+### grid-area
+
+This is an even shorter shorthand of grid-column/row
+
+It combines both in one
+
+```css
+.a {
+  grid-area: row-1 / column-1 / row-3 / column-2;
+}
+```
+
+This uses 4 values: the row you want to start one / the column you want to start on / the row you want to end on / the column you want to end on
+
+Naturally, you can use the column/row number or the name if you gave them one
