@@ -113,3 +113,13 @@ It combines both in one
 This uses 4 values: the row you want to start one / the column you want to start on / the row you want to end on / the column you want to end on
 
 Naturally, you can use the column/row number or the name if you gave them one
+
+## grid-gap
+
+this is the grid version of the `gap` property in flex containers.
+
+this goes inside of the grid container and allows you to set a gap between the items
+
+remember to use the same value for rows and columns for best design practice
+
+`.grid-container { grid-gap: 2rem; }`
