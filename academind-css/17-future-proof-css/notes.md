@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [CSS Modules](#css-modules)
-2. [CSS Variables] (#css-variables)
+2. [CSS Variables](#css-variables)
 3. Vendor Prefixes
 4. Browser Support
 5. Polyfills
