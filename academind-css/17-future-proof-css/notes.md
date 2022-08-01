@@ -7,7 +7,7 @@
 3. [Vendor Prefixes](#prefixes)
 4. [Browser-Support] (#support)
 5. [Polyfills] (#polyfills)
-6. Getting rid of inconsistent browser styles
+6. [Inconsistent-browser-styles] (#inconsistent)
 7. Naming CSS CLasses
 8. CSS Frameworks
 
@@ -85,3 +85,12 @@ Polyfill is a JS package that enables certain CSS features that would otherwise 
 Polyfill has its limits so not all features can magically be supported.
 
 Also, it adds extra stress on the clients computer since it has to execute on their browser and affects the preformance of your page loading.
+
+<div id="inconsistent"></div>
+
+## Inconsistent Browser Styles
+
+Two ways to handle this:
+
+1. Use a reset library like `normalize.css`
+2. Do it yourself with `*, *::before, *::after { }`
