@@ -19,3 +19,15 @@ A knock-off Air BnB to practice the web app look along w/ flexbox
 ### Nexter
 
 A landing page for a real estate company that uses grid
+
+## Github Page
+
+https://github.com/jonasschmedtmann/advanced-css-course
+
+Here you'll find all the projects' code and resources
+
+## Resources
+
+https://codingheroes.io/resources/
+
+A page of his listing resources for many different things in web-dev
