@@ -5,7 +5,7 @@
 1. [CSS Modules](#css-modules)
 2. [CSS Variables](#css-variables)
 3. [Vendor Prefixes](#prefixes)
-4. Browser Support
+4. [Browser-Support] (#support)
 5. Polyfills
 6. Getting rid of inconsistent browser styles
 7. Naming CSS CLasses
@@ -65,3 +65,11 @@ When a new CSS module becomes finalized across all those browsers, we dont need 
   transition: all 1s linear;
 }
 ```
+
+<div id="support"></div>
+
+## Browser Support
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/@supports
+
+Use that and caniuse.com to figure shit out. Avoid using the latest CSS beels and whistles.
