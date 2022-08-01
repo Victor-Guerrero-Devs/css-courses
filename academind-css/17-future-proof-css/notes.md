@@ -5,11 +5,11 @@
 1. [CSS Modules](#css-modules)
 2. [CSS Variables](#css-variables)
 3. [Vendor Prefixes](#prefixes)
-4. [Browser-Support] (#support)
-5. [Polyfills] (#polyfills)
-6. [Inconsistent-browser-styles] (#inconsistent)
-7. [Naming-CSS-Classes] (#naming)
-8. CSS Frameworks
+4. [Browser Support](#support)
+5. [Polyfills](#polyfills)
+6. [Inconsistent Browser Styles](#inconsistent)
+7. [Naming CSS Classes](#naming)
+8. [CSS Frameworks](#frameworks)
 
 <div id="css-modules"></div>
 
@@ -118,3 +118,34 @@ You use two dashes to name a new skin
 BEM = Block Element Modifier
 
 `.block__element--modifier` = `.mobile-nav__link-item--cta`
+
+The other big plus to using BEM is that the chances of you writing the exact same class twice is greatly reduced given how specific everything is.
+
+<div id="frameworks"></div>
+
+## CSS Frameworks
+
+AKA Component libraries since they come with pre-styled components you can copy/paste into your own projects.
+
+You also have utility frameworks like `tailwind` who provide you the tools to style components easily but you still have to do the work yourself.
+
+### Benefits of Frameworks
+
+- style your webpages very quickly
+- follows best practices
+- CSS lord not needed
+
+### Downsides of Frameworks
+
+- cookie cutter (although this could be mitigated by having your own stylesheet taking precedence like in Angela's Tindog project)
+- a lot of bloat
+
+### Benefits of Vanilla CSS
+
+- full control
+- little bloat
+
+### Downsides of Vanilla CSS
+
+- everything must be built from scratch
+- danger of writing noob tier CSS
