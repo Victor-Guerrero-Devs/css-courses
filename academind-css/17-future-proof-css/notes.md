@@ -11,5 +11,5 @@
 7. Naming CSS CLasses
 8. CSS Frameworks
 
-<div id="css-modules">
+<div id="css-modules" />
 ## CSS Modules
