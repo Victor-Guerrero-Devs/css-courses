@@ -4,7 +4,7 @@
 
 1. [CSS Modules](#css-modules)
 2. [CSS Variables](#css-variables)
-3. Vendor Prefixes
+3. [Vendor Prefixes](#prefixes)
 4. Browser Support
 5. Polyfills
 6. Getting rid of inconsistent browser styles
@@ -37,3 +37,31 @@ Already know about this.
 You make variables inside of the `:root` selector so you can clean up any repeating values and have an easily maintainable CSS file since you just need to go to one place to make changes.
 
 This is not limited to colors. YOu can use variables for heading font-sizes, weights, etc etc
+
+<div id="prefixes"></div>
+
+## Vendor Prefixes
+
+WHen a new CSS module is being developed, some browsers implement them before they are finished.
+
+Let's say `transition` was a new thing
+
+```css
+.myClass {
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+```
+
+Therefore, we wanted to make sure this new CSS feature would be supported across all the major browsers, we need to use all of those vendor prefixes.
+
+When a new CSS module becomes finalized across all those browsers, we dont need the prefixes any more
+
+```css
+.myClass {
+  transition: all 1s linear;
+}
+```
