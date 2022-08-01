@@ -6,7 +6,7 @@
 2. [CSS Variables](#css-variables)
 3. [Vendor Prefixes](#prefixes)
 4. [Browser-Support] (#support)
-5. Polyfills
+5. [Polyfills] (#polyfills)
 6. Getting rid of inconsistent browser styles
 7. Naming CSS CLasses
 8. CSS Frameworks
@@ -73,3 +73,15 @@ When a new CSS module becomes finalized across all those browsers, we dont need 
 https://developer.mozilla.org/en-US/docs/Web/CSS/@supports
 
 Use that and caniuse.com to figure shit out. Avoid using the latest CSS beels and whistles.
+
+`@support` allows use to use fallback styling if a browser does not support x feature
+
+<div id="polyfills"></div>
+
+## Polyfills
+
+Polyfill is a JS package that enables certain CSS features that would otherwise not be supported by X browser.
+
+Polyfill has its limits so not all features can magically be supported.
+
+Also, it adds extra stress on the clients computer since it has to execute on their browser and affects the preformance of your page loading.
