@@ -14,3 +14,9 @@
 <div id="css-modules"></div>
 
 ## CSS Modules
+
+https://www.w3.org/Style/CSS/Overview.en.html
+
+Remember how we said CSS 3 will not upgrade to CSS 4 but just get new modules and have the present ones updated?
+
+The link above shows the work people are doing for the latest modules etc. It provides documentation that goes into more depth than MDN.
