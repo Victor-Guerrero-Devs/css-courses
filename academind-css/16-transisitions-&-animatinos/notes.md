@@ -13,3 +13,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animat
 This is the more advanced version of transition that allows you greater control and precision over the animations of an element.
 
 In fact you can control them frame by frame.
+
+## JS + Animations
+
+JS has animation event listeners for when an animation starts, is executing, and has ended.
+
+With these, you can do even more fancy stuff.
