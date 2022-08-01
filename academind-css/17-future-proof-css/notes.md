@@ -8,7 +8,7 @@
 4. [Browser-Support] (#support)
 5. [Polyfills] (#polyfills)
 6. [Inconsistent-browser-styles] (#inconsistent)
-7. Naming CSS CLasses
+7. [Naming-CSS-Classes] (#naming)
 8. CSS Frameworks
 
 <div id="css-modules"></div>
@@ -94,3 +94,27 @@ Two ways to handle this:
 
 1. Use a reset library like `normalize.css`
 2. Do it yourself with `*, *::before, *::after { }`
+
+Every browser has its default styles it likes to apply like margins to headers etc.
+
+It is up to you to normalize these things.
+
+<div id="naming"></div>
+
+## Naming CSS Classes
+
+There are a ton of naming conventions out there and the one you use will be up to you or your company.
+
+A popular one you should get used to is BEM.
+
+You use two underscores to name a component of a section
+
+`.product-section__heading` = the heading within the product section
+
+You use two dashes to name a new skin
+
+`.product-section__heading--highlighted`
+
+BEM = Block Element Modifier
+
+`.block__element--modifier` = `.mobile-nav__link-item--cta`
