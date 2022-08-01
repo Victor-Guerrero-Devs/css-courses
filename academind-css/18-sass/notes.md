@@ -11,3 +11,7 @@ SASS includes a bunch of things like variables, nested selectors and better synt
 Note that SASS is only used during development.
 
 Before production, you are supposed to convert the SASS files into CSS ones via a CLI tool so the browsers can understand it.
+
+Read from their website on how to install/use SASS. This video guide may be outdated.
+
+Furthermore, get used to figuring stuff out from docs.
