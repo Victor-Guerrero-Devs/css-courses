@@ -109,3 +109,12 @@ Now our life has been made so much easier.
 - if we need make things bigger for desktop, we just change `html { font-size: 62.5%; }` to `70%` and with one line we saved our selves so much work
 
 ### CSSOM
+
+This virtualization of the styles takes these into account
+
+- box model
+- box types (block, inline, inline-block)
+- position (relative, absolute, fixed) of elements
+- stacking context (z-index)
+
+Once it has put the values of all these things through an algorithm, it can now apply those styles on the DOM it has created and render the page on your browser.
