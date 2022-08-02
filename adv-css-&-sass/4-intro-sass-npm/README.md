@@ -37,3 +37,11 @@ use.
 
 Use SCSS syntax instead. 
 
+## First Steps w/ Sass
+
+- open up codepen 
+- switch the settings to use SCSS 
+- now you can play around with it without the need of installing and configuring it on your local machine
+
+
+
