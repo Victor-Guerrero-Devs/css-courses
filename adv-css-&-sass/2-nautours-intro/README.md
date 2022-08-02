@@ -32,3 +32,5 @@ Fourth, we apply the hero img as the background like so
 `background-image` property means: apply this linear gradient across the entire image but lower the opacity so the image can actually be seen
 
 `background-position` = no matter the viewport width, the top of the image never changes
+
+`clip-path` = add a sloping cut at the bottom border of the hero section. Look it up on MDN for more info. Btw websites exist to handle all of the nitty gritty.
