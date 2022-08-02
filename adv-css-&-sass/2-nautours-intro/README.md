@@ -88,3 +88,5 @@ We wrap the h1 in that div so we can use `position: absolute;` again so we can p
 ```
 
 This is just a fancy way to do it. `top: 40%;` because the cut out portion from the clip-path makes the dead center look lower so we need to take that visual illusion into account.
+
+Start on `5. Creating Cool CSS Animations`
