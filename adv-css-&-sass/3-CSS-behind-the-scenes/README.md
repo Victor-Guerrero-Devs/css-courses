@@ -166,3 +166,34 @@ You have 7 different folders which handle
 Each folder has small CSS files that are obviously related the to folder name and all of these small CSS files are imported into a main one.
 
 Finally, more than often, they are written in SASS (or any other CSS pre-processor) and converted to CSS during production.
+
+## Using BEM in Natour
+
+```html
+<header class="header">
+  <div class="header__logo-box">
+    <img
+      src="./img/logo-white.png"
+      alt="logo of a white crown"
+      class="header__logo"
+    />
+  </div>
+
+  <div class="header__text-box">
+    <h1 class="heading-primary">
+      <span class="heading-primary--main">Outdoors</span>
+      <span class="heading-primary--sub">is where life happens</span>
+    </h1>
+
+    <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+  </div>
+</header>
+```
+
+We have added the block name `header` and you can see how the elements of the `header` block got double underscore like `logo-box, logo, text-box`
+
+Decided to keep `heading-primary` as its own block instead of making it an element of the `header` block so we can re-use it elsewhere.
+
+notice stuff like `heading-primary--main, heading-primary--sub, btn--white, btn--animated`
+
+They use double hyphens because they are modified versions of those blocks
