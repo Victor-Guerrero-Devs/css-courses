@@ -84,4 +84,28 @@ The child will inherit a `line-height` of 30px (20 _1.5) and not 37.5px (25 _ 1.
 
 Anyway, inheritance is a key component to writing maintainable code that is not bloated.
 
+#### Inheritance in Action
+
+We are going to convert all the units in our CSS file into REM. Why? because all we have to do is increase or decrease the global font-size in `html { }` in media queries instead of making a bunch of selectors for h1, h2, h3, etc.
+
+```css
+html {
+  font-size: 10px; /* 62.5% */
+}
+```
+
+Now REM is going to be easy to work with. 1 REM = 10 pixels.
+
+Replace all the pixel units in Natour with rem
+
+- 5px -> .5rem
+- it is standard practice in CSS to leave out the zero in decimals
+- .5rem is good
+- 0.5rem is bad
+
+Now our life has been made so much easier.
+
+- if a user has changed their default font-size in the browser, our page is responsive (we must use the percentage unit not pizels to get this to work, i.e. 62.5% not 10px)
+- if we need make things bigger for desktop, we just change `html { font-size: 62.5%; }` to `70%` and with one line we saved our selves so much work
+
 ### CSSOM
