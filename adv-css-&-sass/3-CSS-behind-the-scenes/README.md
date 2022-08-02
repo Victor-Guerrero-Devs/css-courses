@@ -37,3 +37,26 @@
 5. it also converts units into pixels, e.g. rem/%/vh/ into pixels
 6. CSS is virutally rendered into a CSSOM (CSS Object Model)
 7. Both the DOM and CSSOM are combined into a `render tree` and finally displayed on the browser
+
+## How CSS is Parsed
+
+### Cascade and Specificity
+
+Some Terminology:
+
+- CSS Rule = selector + declaration block (everything that goes inside the curly braces)
+- declaration = property + value in the curly braces
+
+When a CSS file is being parsed by the browser, the browser's first job is to resolve any conflict of styles affecting the same element.
+
+- specificity is what decides which selector wins
+- also, selectors at the bottom of the CSS file take priority
+- CSS files that are linked last on the HTML file also take priority
+
+Last two bullet points should give you the idea behind `cascade` style sheets
+
+### Value Processing
+
+### Inheritance
+
+### CSSOM
