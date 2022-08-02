@@ -89,4 +89,73 @@ We wrap the h1 in that div so we can use `position: absolute;` again so we can p
 
 This is just a fancy way to do it. `top: 40%;` because the cut out portion from the clip-path makes the dead center look lower so we need to take that visual illusion into account.
 
-Start on `5. Creating Cool CSS Animations`
+### Creating Cool CSS Animations
+
+how to create animations in CSS w/ `@keyframes` and `animation` property
+
+We are going to build a fade in animation for the header text and eventually button when the page loads up
+
+- remember the JS library we imported in Moshify for the animations?
+- now we will build it ourselves, at least partially
+
+```css
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+```
+
+This is how we make animations. As you can see, the main heading text begins by coming in from the left (-100px) as its letters come into view (opacity 0 to 1).
+
+By 80%, it overshoots its landing but then goes back to its proper place at 100% (personally I think that jerky movement is lame but w/e)
+
+```css
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+```
+
+Finally for the sub text, notice how we used the `animation` shorthand this time and all we had to do is switch the pixel values in the new animation to get the direction correctly
