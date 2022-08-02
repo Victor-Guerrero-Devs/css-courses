@@ -24,6 +24,8 @@ Fourth, we apply the hero img as the background like so
     ), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 ```
 
