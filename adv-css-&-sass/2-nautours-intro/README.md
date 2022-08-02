@@ -89,7 +89,7 @@ We wrap the h1 in that div so we can use `position: absolute;` again so we can p
 
 This is just a fancy way to do it. `top: 40%;` because the cut out portion from the clip-path makes the dead center look lower so we need to take that visual illusion into account.
 
-### Creating Cool CSS Animations
+## Creating Cool CSS Animations
 
 how to create animations in CSS w/ `@keyframes` and `animation` property
 
@@ -159,3 +159,11 @@ By 80%, it overshoots its landing but then goes back to its proper place at 100%
 ```
 
 Finally for the sub text, notice how we used the `animation` shorthand this time and all we had to do is switch the pixel values in the new animation to get the direction correctly
+
+## Styling and Animating the Button Pt 1
+
+we will learn:
+
+- pseudo-elements/classes
+- `::after` pseudo-element
+- hover animation w/ `transition` property
