@@ -167,3 +167,56 @@ we will learn:
 - pseudo-elements/classes
 - `::after` pseudo-element
 - hover animation w/ `transition` property
+
+So we will add an anchor element right below the text within the same container
+
+```html
+<div class="text-box">
+  <h1 class="heading-primary">
+    <span class="heading-primary-main">Outdoors</span>
+    <span class="heading-primary-sub">is where life happens</span>
+  </h1>
+
+  <a href="#" class="btn btn-white">Discover our tours</a>
+</div>
+```
+
+And now time to style the anchor element to look like a button
+
+```css
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+```
+
+Now to position the button correctly, we need to go to `.text-box { }` and add `text-align: center;` so we can vertically center the button.
+
+Next we need to go to `.heading-primary` and add `margin-bottom: 60px;` so we can add a 60 pixel buffer between the main heading and the button.
+
+Now for the animation. Take note of `transition: all 0.2s;` -- this is the basic way of handling animations. We have already done the more complicated version with `@keyframes` and the `animation` property but sometimes that isn't necessary for every little thing.
+
+```css
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  /* active = when it is clicked */
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+```
+
+Here we made some transitions that makes the button move up and produce a shadow (giving it a 3d feel) when it is either hovered or clicked.
