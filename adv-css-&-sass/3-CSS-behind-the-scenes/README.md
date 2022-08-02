@@ -118,3 +118,51 @@ This virtualization of the styles takes these into account
 - stacking context (z-index)
 
 Once it has put the values of all these things through an algorithm, it can now apply those styles on the DOM it has created and render the page on your browser.
+
+## CSS Architecture
+
+The pieces that determine if your CSS Architecture is any good are:
+
+- clean?
+- good naming convention?
+- modular?
+- easy to add to?
+- reusable?
+- great directory?
+
+You should plan out your projects like this:
+
+- make a barebones wire frame of your webpage layout
+- make a high fidelity replica of it in figma
+- construct the HTML skeleton
+- start building the CSS on the largest components first and work yourself down to the smallest
+
+You should:
+
+- use component driven design (create the building blocks first like in `Moshify`)
+  - build blocks that stand on their own
+  - come together to build components via layout
+  - re-usable across the project and any other project
+  - blocks must be independent from one another
+
+As for the directory for CSS, there is a popular one called `the 7-1 pattern`
+
+You have 7 different folders which handle
+
+- base/
+- components/
+  - one file per component
+- layout/
+  - one file per layout (desktop, tablet, mobile)
+- pages/
+  - specific styles for pages
+- themes/
+  - different themes if any
+- abstracts/
+  - variables etc
+- vendors/
+  - 3rd party CSS
+
+Each folder has small CSS files that are obviously related the to folder name and all of these small CSS files are imported into a main one.
+
+Finally, more than often, they are written in SASS (or any other CSS pre-processor) and converted to CSS during production.
