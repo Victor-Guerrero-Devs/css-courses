@@ -160,7 +160,7 @@ By 80%, it overshoots its landing but then goes back to its proper place at 100%
 
 Finally for the sub text, notice how we used the `animation` shorthand this time and all we had to do is switch the pixel values in the new animation to get the direction correctly
 
-## Styling and Animating the Button Pt 1
+## Styling the Button Pt 1
 
 we will learn:
 
@@ -220,3 +220,30 @@ Now for the animation. Take note of `transition: all 0.2s;` -- this is the basic
 ```
 
 Here we made some transitions that makes the button move up and produce a shadow (giving it a 3d feel) when it is either hovered or clicked.
+
+## Animating the Btn Pt 2
+
+First add a new class `btn-animated` to the anchor element acting as our button
+
+Second make a keyframes for it
+
+```css
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+```
+
+Now when the page loads, the button on the hero section will seem to float from the bottom as it slowly obtains physical form
