@@ -62,3 +62,29 @@ This way we can position it exactly where we want it.
   height: 35px;
 }
 ```
+
+### position h1 text
+
+to the header element, we nest
+
+```html
+<div class="text-box">
+  <h1 class="heading-primary">
+    <span class="heading-primary-main">Outdoors</span>
+    <span class="heading-primary-sub">is where life happens</span>
+  </h1>
+</div>
+```
+
+We wrap the h1 in that div so we can use `position: absolute;` again so we can put right in the middle and remains there at any viewport
+
+```css
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+This is just a fancy way to do it. `top: 40%;` because the cut out portion from the clip-path makes the dead center look lower so we need to take that visual illusion into account.
