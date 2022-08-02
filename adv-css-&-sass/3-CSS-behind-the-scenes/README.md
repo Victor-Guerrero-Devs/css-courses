@@ -57,6 +57,12 @@ Last two bullet points should give you the idea behind `cascade` style sheets
 
 ### Value Processing
 
+After the browser figures out which elements get X styles, it needs to figure what all the units are in pixels.
+
+Naturally, `90vw` in pixels is different if you are talking about a desktop monitor and a smartphone's.
+
+This is what the browserd does: it converts any units that were declared w/o pixels into pixels in relation to the device upon which it is being rendered.
+
 ### Inheritance
 
 ### CSSOM
