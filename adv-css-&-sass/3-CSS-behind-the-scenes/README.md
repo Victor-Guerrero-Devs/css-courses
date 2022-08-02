@@ -61,8 +61,27 @@ After the browser figures out which elements get X styles, it needs to figure wh
 
 Naturally, `90vw` in pixels is different if you are talking about a desktop monitor and a smartphone's.
 
-This is what the browserd does: it converts any units that were declared w/o pixels into pixels in relation to the device upon which it is being rendered.
+This is what the browser does: it converts any units that were declared w/o pixels into pixels in relation to the device upon which it is being rendered.
 
 ### Inheritance
+
+If a child element does not a specific declaration, it will inherit that from its parent.
+
+It will also inherit computed values from its parent.
+
+```css
+.parent {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.child {
+  font-size: 25px;
+}
+```
+
+The child will inherit a `line-height` of 30px (20 _1.5) and not 37.5px (25 _ 1.5). This is because it has inherited the **computed value** from its parent.
+
+Anyway, inheritance is a key component to writing maintainable code that is not bloated.
 
 ### CSSOM
