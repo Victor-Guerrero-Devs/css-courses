@@ -36,3 +36,29 @@ Fourth, we apply the hero img as the background like so
 `clip-path` = add a sloping cut at the bottom border of the hero section. Look it up on MDN for more info. Btw websites exist to handle all of the nitty gritty.
 
 ## Hero pt 2
+
+### position logo
+
+We need to add `position: relative` to `.header` so we can use `position: absolute` for the logo container.
+
+This way we can position it exactly where we want it.
+
+```html
+<header class="header">
+  <div class="logo-box">
+    <img src="./img/logo-white.png" alt="logo of a white crown" class="logo" />
+  </div>
+</header>
+```
+
+```css
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+```
