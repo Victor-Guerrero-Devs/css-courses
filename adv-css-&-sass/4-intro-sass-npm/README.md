@@ -148,4 +148,24 @@ Here are the basics you should be able to do:
 - creating directories 
 - deleting directories 
 
+## Setting up SASS
+
+This will be for any project in the future. 
+
+1. have node and npm installed 
+2. download sass globally `npm install -g sass`
+3. make a directory called `sass-test`
+4. within `sass-test` make an `index.html` alongside two more directories `sass` and `css`
+5. within `sass/` make `styles.scss` and within `css/` make `styles.css` (make sure to link to the `css` file on `index.html`)
+6. write some nonsense in `index.html` and then write some styles in `sass/styles.scss`
+7. save everything 
+8. in the terminal, in directory `sass-test`, write the command `sass sass/index.scss css/styles.css`
+9. with that command, you compiled all the `scss` styles into `css/styles.css` and you should see plain old css in that file which the browser can understand. 
+
+### Setting up SASS for Natours
+
+1. make a new directory in `Natours/` called `sass/`
+2. withing `sass/` create `main.scss`
+3. copy everything within `css/style.css` and paste it into `sass/main.scss` (regular css works fine in scss files) 
+4. any future css will be written in `sass/main.scss`
 
