@@ -168,4 +168,15 @@ This will be for any project in the future.
 2. withing `sass/` create `main.scss`
 3. copy everything within `css/style.css` and paste it into `sass/main.scss` (regular css works fine in scss files) 
 4. any future css will be written in `sass/main.scss`
+5. make sass variables out of the colors in the comments and save 
+
+```css 
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+```
+6. compile it into regular css like this `sass sass/main.scss css/style.css`
+7. that's it, you just need to run that command every time changes are made 
+
+There are scripts to do this for you automatically but w/e 
 
