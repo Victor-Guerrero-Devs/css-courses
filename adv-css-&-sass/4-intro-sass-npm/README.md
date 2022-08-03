@@ -180,3 +180,24 @@ $color-primary-dark: #28b485;
 
 There are scripts to do this for you automatically but w/e 
 
+You can open a separate terminal open to your current project directory and run 
+
+`sass sass/main.scss css/style.css -w`
+
+The `-w` means watch so anytime a change is made and saved in `main.scss` it will be compiled into `style.css`
+
+Be aware, the terminal can do nothing else while it is watching this which is why I told you to open a terminal just for thi job 
+
+## Auto reload page on file changes
+
+`npm i live-server -g`
+
+Install live server globally 
+
+Navigate to your project directory 
+
+`live-server`
+
+A new page will open on your default browser that will refresh itself on file change. 
+
+This comman will also hog your terminal so you won't be able to do anything else on it (therefore 2 terminals that'll be too busy to doo anything else) 
