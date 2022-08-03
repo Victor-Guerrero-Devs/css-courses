@@ -155,3 +155,13 @@ we dont need to run sass on the entire directory because all of the individual s
 2. flex: for 2nd project, perfect for 1-d layouts 
 
 3. grid: for 3rd project, perfect for 2-d layouts 
+
+## Custom Grid w/ Floats
+
+As mentioned, we will build a grid using floats to ensure that our layout works on any old browser. 
+
+See the code here: https://codepen.io/joaogeureri/pen/vYRRyzb
+
+We basically use the `table` display with `float` and responsive widths to get it working 
+
+
