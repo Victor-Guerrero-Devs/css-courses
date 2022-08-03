@@ -134,3 +134,18 @@ As you can see, `.error-serious` gets the same styles as the block as well as th
 </div>
 ```
 
+## CLI Intro
+
+We need the CLI to compile our SCSS files into CSS ones. 
+
+Here are the basics you should be able to do: 
+- navigate through directories
+- able to see what's inside directories 
+- using tab for auto-complete naming on directories/files 
+- moving out of directories 
+- adding new files 
+- deleting files 
+- creating directories 
+- deleting directories 
+
+
