@@ -57,3 +57,87 @@ After
 We use the `&` to stand in for the block, in this case `header`
 
 Continue to do this for everything else on the page. 
+
+## 7-1 CSS Architecture
+
+This is the directory structure that is used on very large projects so that maintenance becomes a lot easier. It may be overkill for this project which is just a landing page but it is a perfect way to be introduced to it. 
+
+### base/
+first we make a directory like so `sass/base/` and make `_base.scss`
+
+Within the base directory, you will put very basic styles like CSS resets, animations, typography etc 
+- all partial files like this use the `_` as part of their naming convention 
+
+To import these into the `main.scss` file, we just need to put this at the top 
+
+`import "base/base"`
+
+SASS understands this as `/base/_base.scss`
+
+### abstracts/
+
+here we put files that are not outputting any css like variables, mixins, and functions 
+
+these use the same naming conventions `abstracts/_variables.scss`
+
+### components/
+
+here we put files for the styles of different components
+
+same naming convention `components/_button.scss`
+
+remember components are independent and re-usable anywhere on the project.  it is the layout which glues them together to make a section. 
+
+### layout/ 
+
+here we put files for the styles of different sections, e.g. the header, footer, navbar etc
+
+same naming convention `layout/_header.scss`
+
+### pages/ 
+
+here we put scss files that pertain to a single page's style 
+
+in this project we only have the landing page but in a real project it would have as many scss files per webpage 
+
+`pages/_home.scss`
+
+### the rest 
+
+There are two other directories we will not be using 
+
+1. themes/ 
+  - here you store scss files that provide different themes like dark mode 
+  
+2. vendors/ 
+  - here you store third party css files like bootstrap, animation libraries etc 
+  
+Therefore we will use the 5-1 architecture 
+
+### conclusion 
+
+import all the stuff into `main.scss`
+
+```sass
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+```
+
+then take all the stuff `main.scss` and place it into its relevant location that we have just created 
+
+Example: move all the variables into `abstracts/_variables.scss`
+
+Since we have the terminal compiling any changes from `main.scss`, any changes done to files that are imported into it will be reflected automatically w/ live server as well 
+
+we dont need to run sass on the entire directory because all of the individual sass files should flow into `main.scss`
+
+
+
