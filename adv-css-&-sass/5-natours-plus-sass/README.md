@@ -140,4 +140,18 @@ Since we have the terminal compiling any changes from `main.scss`, any changes d
 we dont need to run sass on the entire directory because all of the individual sass files should flow into `main.scss`
 
 
+## 3 Principles of Responsive Design
 
+1. Fluid grids and layouts: columns are used to divide content and the number of columns either increase of decrease in relation to the viewport width (use % instead of pixels)
+
+2. Responsive images: images that use % as width for fluid expansion and higher resolution alternatives for high density screens
+
+3. Media queries: use breakpoints to insert new styles 
+
+### layout types
+
+1. float: we will use this for the current project b/c (as of 2017) a lot of browsers do not support flexbox or grid 
+
+2. flex: for 2nd project, perfect for 1-d layouts 
+
+3. grid: for 3rd project, perfect for 2-d layouts 
