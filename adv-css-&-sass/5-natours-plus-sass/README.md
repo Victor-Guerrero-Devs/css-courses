@@ -274,10 +274,16 @@ Uses a rotating card effect to present info on the back of a card upon hover usi
 
 It looks like there are 3 cards but in reality there are 6. 
 
-3 of them are the front and the other 3 are the back. Therefore, they come in pairs. The illusion that they are the same card comes from `absolute: position;`
+3 of them are the frontfeature-box and the other 3 are the back. Therefore, they come in pairs. The illusion that they are the same card comes from `absolute: position;`
 
 In reality, they are stacked on top of each other and the back takes over on hover. 
 
 `backface-visibility: hidden;` keeps the hidden card hidden 
 
+## Story section 
 
+aka Testimonials 
+
+find the styles for this section in
+- `sass/components/_bg-video.scss`
+- `sass/components/_story.scss`
