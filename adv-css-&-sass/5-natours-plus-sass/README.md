@@ -287,3 +287,38 @@ aka Testimonials
 find the styles for this section in
 - `sass/components/_bg-video.scss`
 - `sass/components/_story.scss`
+
+Simple section. We have a video playing as the background with two testimonial blocks and a button at the bottom. 
+
+## Booking section 
+
+This will cover styling forms, using the `::input-placeholder` pseudo-element, styles for invalid inputs and custom radio buttons. 
+
+find the styles in
+- `sass/components/_form.scss`
+
+the general styles is in 
+- `sass/pages/_home.scss`
+
+The overall section has a linear gradient background 
+
+The form component has the image of the lake as a background but has a linear gradient that covers the half which the actual input elements fall on 
+
+```css
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+  height: 50rem;
+}
+```
+
+Found in `sass/pages/_home.scss`
