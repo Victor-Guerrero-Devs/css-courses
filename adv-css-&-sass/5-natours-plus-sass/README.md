@@ -164,4 +164,59 @@ See the code here: https://codepen.io/joaogeureri/pen/vYRRyzb
 
 We basically use the `table` display with `float` and responsive widths to get it working 
 
+## About Section 
 
+Now that we have a grid layout, we can build the about section. 
+
+stuff in `base/_utilities.scss` are for storing classes that serve 1 stylistic purpose, like Tailwind CSS 
+
+```css
+.u-center-text {
+  text-align: center !important;
+}
+```
+
+```html
+<div class="u-center-text u-margin-bottom-big">
+  <h2 class="heading-secondary">
+    Exciting tours for adventurous people
+  </h2>
+</div>
+```
+
+As you can see, we add that utility class to a div so that the text inside can inherit that property.
+
+### about section structure
+
+the overall section has two columns. 
+
+the main headings takes both of them. 
+
+below the heading, you have one column with the text + learn more button and the other column has the pictures 
+
+```html
+<section class="section-about">
+  <div class="u-center-text u-margin-bottom-big">
+    <h2 class="heading-secondary">
+      Exciting tours for adventurous people
+    </h2>
+  </div>
+
+  <div class="row">
+    <div class="col-1-of-2"> text stuff here </div>
+    <div class="col-1-of-2"> imgs go here </div>
+  </div>
+</section>
+```
+
+### components/_button.scss
+
+we add additional styles for the anchor button for `Learn more ->` here 
+
+### components/_composition.scss
+
+this is where we place our styles for the images and the hover effects 
+
+the images are nested in a container that is set to `position: relative;` and then each image is given its own class so we can give it its own position via `position: absolute`
+
+this is how we get the layered image look. 
