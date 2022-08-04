@@ -331,4 +331,10 @@ Notes to be added
 
 Notes to be added
 
+## Popup section
 
+This is the modal that pops up if you press the book now button behind one of the tour cards. 
+
+On our markup, we can place it anywhere but let's just add it right after the footer. 
+
+It uses the fixed position so its relation to any other element does not matter because it is taken out of the flow. 
