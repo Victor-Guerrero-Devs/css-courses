@@ -18,6 +18,7 @@
   transform: skewY(-7deg);
   margin-top: -10rem;
 
+  /* direct children of section features */
   & > * {
     transform: skewY(7deg);
   }
