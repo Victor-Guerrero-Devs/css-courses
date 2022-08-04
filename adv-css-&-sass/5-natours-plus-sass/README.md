@@ -265,3 +265,19 @@ we add a new selector for the `.section-features { }` and add general styles, th
 ```
 
 Notice in the direct children selector we skew everything in the opposite direction. This is how we achieve the sloping top and bottom borders of the section while the feature cards look normal 
+
+## Tours section
+
+90% of the styling done in this is found in `/sass/components/_card.scss`
+
+Uses a rotating card effect to present info on the back of a card upon hover using `perspective` and `backface-visibility`
+
+It looks like there are 3 cards but in reality there are 6. 
+
+3 of them are the front and the other 3 are the back. Therefore, they come in pairs. The illusion that they are the same card comes from `absolute: position;`
+
+In reality, they are stacked on top of each other and the back takes over on hover. 
+
+`backface-visibility: hidden;` keeps the hidden card hidden 
+
+
