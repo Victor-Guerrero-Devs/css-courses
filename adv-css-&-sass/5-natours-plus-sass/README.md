@@ -220,3 +220,48 @@ this is where we place our styles for the images and the hover effects
 the images are nested in a container that is set to `position: relative;` and then each image is given its own class so we can give it its own position via `position: absolute`
 
 this is how we get the layered image look. 
+
+## Features section 
+
+we will be using icons from https://linea.io/
+
+Download it, copy over the fonts directory (where the icons are) and and the CSS file into your project's CSS directory. 
+- rename the CSS file you downloaded to `icon-font.css` and link it on your index.html 
+
+You can use the icons just by referencing its class name 
+
+`<i class="icon-basic-compass"></i>` 
+
+Add an additional class for styling 
+
+### components/_feature-box.scss
+
+this is where the styling for each features card will go 
+
+It will also contain the styling for the icon as well as the hover effect which makes it bigger 
+
+### pages/_home.scss 
+
+we add a new selector for the `.section-features { }` and add general styles, the bg img with the linear gradient hue and the skew so we get the slopping borders like the hero on both the top and bottom 
+
+```css
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  /* direct children of section features */
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+```
+
+Notice in the direct children selector we skew everything in the opposite direction. This is how we achieve the sloping top and bottom borders of the section while the feature cards look normal 
