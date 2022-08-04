@@ -322,3 +322,13 @@ The form component has the image of the lake as a background but has a linear gr
 ```
 
 Found in `sass/pages/_home.scss`
+
+## Footer section 
+
+Notes to be added 
+
+## Navbar section 
+
+Notes to be added
+
+
