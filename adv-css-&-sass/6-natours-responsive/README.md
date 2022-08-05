@@ -127,14 +127,46 @@ Secondly, performance again. You don't want a mobile user to have to wait 10 sec
 	- hence the need for density switching 
 3. art direction: providing a modified image to smaller screens, e.g. most common usage is cropping 
 
-## Art Direction and Density Switching 
+## Putting Responsive Images in Action
 
 ```html
 <img
-                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                alt="Photo 1"
-                class="composition__photo composition__photo--p1"
-                src="img/nat-1-large.jpg"
-              />
+  srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+  alt="Photo 1"
+  class="composition__photo composition__photo--p1"
+  src="img/nat-1-large.jpg"
+/>
 ```
+
+In this example, we are using **resolution switching**. As you can see, a smaller img (300x200) is displayed on smaller viewports and a larger img (1000x667) on larger viewports 
+
+Next to srcset, you see `300w` and `1000w`. This tells the browser the width of these images without needing to download them. The browser will decide. 
+
+The smaller img is 37kb and the bigger one 370kb. Mobile users now save about 340kb of data. That's huge! 
+
+```html
+<picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="Full logo"
+            src="img/logo-green-2x.png"
+          />
+        </picture>
+```
+
+In this example, we use **density switching** and **art direction**. We provide a higher res logo for high density screens and a modified logo for mobile. 
+- by modified, the logo is arranged in a row on mobile but as a column in bigger viewports thus art direction
+
+
+
+
+
+
