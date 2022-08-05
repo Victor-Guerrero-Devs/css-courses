@@ -165,8 +165,34 @@ The smaller img is 37kb and the bigger one 370kb. Mobile users now save about 34
 In this example, we use **density switching** and **art direction**. We provide a higher res logo for high density screens and a modified logo for mobile. 
 - by modified, the logo is arranged in a row on mobile but as a column in bigger viewports thus art direction
 
+## Responsive Imgs and CSS
 
+- how to implement responsive imgs in CSS
+- how to use resolution media queries to target high res screens 
+- combining multiple conditions in media queries 
 
+We are going to make the hero bg img responsive by making it smaller for mobile phones 
+- you should try to implement this to the other imgs that are being used for the background as well, e.g. the features section, the form 
 
+```scss
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url(../img/hero.jpg);
+  }
+```
+
+This is in `/sass/layout/_header.scss` and this is how we are able to change the bg img into a bigger one for desktop screens 
+
+Currently, the default img is the one which is `1200px wide` which will look fine on mobile screens with 2x DPR 
+
+We provide the larger version `2000px wide` for desktop viewports 
+
+With these two options, we can save mobile users about 400kb in data while still giving them a sharp img if they have high density screens 
 
 
