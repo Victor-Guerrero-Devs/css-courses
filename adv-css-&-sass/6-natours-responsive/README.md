@@ -195,4 +195,12 @@ We provide the larger version `2000px wide` for desktop viewports
 
 With these two options, we can save mobile users about 400kb in data while still giving them a sharp img if they have high density screens 
 
+## Testing Browser Support 
 
+The newer a CSS feature is, the more likely it is not supported by boomer browsers like internet explorer and safari. 
+
+SASS provides some tools to get around this like `@supports (X) { }` which means if X is supported by the browser do this styling 
+
+If X is not supported, those styles arent applied. 
+
+Main concern is making the CSS work for safari by using web kits.
