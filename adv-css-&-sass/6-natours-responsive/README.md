@@ -100,3 +100,17 @@ we will update the typography and layout scss files to include our media queries
 ```
 
 this is from `/sass/base/_typography.scss` and show how we use the `@include` keyword plus the media query width "variable" with the property we wish to change inside
+
+As for layout, we reduce the amount of columns as the viewport width grows smaller 
+
+## About and Features Section
+
+meh 
+
+## Tours, Stories, Booking Sections 
+
+meh
+
+## Overview on Responsive Images
+
+start here, vid 7
