@@ -31,4 +31,17 @@ Best Breakpoints
 - making breakpoints designed around your layout 
 - whenever your layout break, you make a new breakpoint to fix it 
 
+https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design
+
+According to this, the 3 most popular resolutions in 2021 were: 
+
+1. 1920x1080 
+2. 1366x768
+3. 360x640
+
+## SASS + Breakpoints 
+
+The best way to add media queries with SASS is to to go into the individual components in `sass/components/` and add media queries directly inside the selectors 
+- this is the same idea as in Mosh's course where he added a media query at the end of every component/section specific to that thing 
+
 
