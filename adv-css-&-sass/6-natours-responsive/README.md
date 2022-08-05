@@ -204,3 +204,11 @@ SASS provides some tools to get around this like `@supports (X) { }` which means
 If X is not supported, those styles arent applied. 
 
 Main concern is making the CSS work for safari by using web kits.
+
+## NPM Build Process 
+
+Since this course is like 5 years old, not gonna take exact notes. 
+
+In any case, use NPM to compress your CSS/JS/HTML files and make them production ready. Find out the 2022 way to do this (mosh goes over this) 
+
+
