@@ -77,3 +77,26 @@ Go to `/sass/abstracts/_mixins.scss` to see the media queries.
 }
 
 ```
+
+## Typography and Layout media queries
+
+we will update the typography and layout scss files to include our media queries 
+
+```scss
+.heading-secondary {
+  font-size: 3.5rem;
+  
+  ...
+  
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+}
+```
+
+this is from `/sass/base/_typography.scss` and show how we use the `@include` keyword plus the media query width "variable" with the property we wish to change inside
