@@ -126,3 +126,15 @@ Secondly, performance again. You don't want a mobile user to have to wait 10 sec
 	- as a consequence, if it is not high res, the image will look stretched out and pixelated 
 	- hence the need for density switching 
 3. art direction: providing a modified image to smaller screens, e.g. most common usage is cropping 
+
+## Art Direction and Density Switching 
+
+```html
+<img
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+                src="img/nat-1-large.jpg"
+              />
+```
