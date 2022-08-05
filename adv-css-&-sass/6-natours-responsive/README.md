@@ -12,4 +12,10 @@ So far, we have been building this project desktop-first. This is not how websit
 - reduces bloat for the mobile experience 
 - easier to design for mobile b/c there is less room to work with 
 
+### Cons of mobile-first design
+
+- does your userbase primarily use mobiles? 
+- desktop version may look too bare 
+- more constrained design choice 
+
 
