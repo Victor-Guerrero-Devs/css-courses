@@ -41,7 +41,39 @@ According to this, the 3 most popular resolutions in 2021 were:
 
 ## SASS + Breakpoints 
 
-The best way to add media queries with SASS is to to go into the individual components in `sass/components/` and add media queries directly inside the selectors 
+The best way to add media queries with SASS is by using mixins. 
+
+You would think that the best way is to go into the individual components in `sass/components/` and add media queries directly inside the selectors 
 - this is the same idea as in Mosh's course where he added a media query at the end of every component/section specific to that thing 
 
+However, this is troublesome and will be a pain to edit all of them should the need arise to do so. 
 
+This is where mixins come in. 
+
+Go to `/sass/abstracts/_mixins.scss` to see the media queries. 
+
+```scss
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}
+
+```
