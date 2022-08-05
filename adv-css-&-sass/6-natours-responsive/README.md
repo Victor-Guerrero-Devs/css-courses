@@ -113,4 +113,16 @@ meh
 
 ## Overview on Responsive Images
 
-start here, vid 7
+Why use responsive images? Mainly for performance concerns. You don't want to waste someone's mobile data by having them download 1mb desktop images when you could use 200kb mobile images instead. 
+
+Secondly, performance again. You don't want a mobile user to have to wait 10 seconds to download all the assests from your page. 
+
+### 3 use cases for responsive images 
+
+1. resolution switching: decrease image resolution on smaller screens 
+2. density switching: provide high res images for high density screens 
+	- say we have an image that is 200px wide 
+	- this same image displayed on a device with retina display will appear as 400px wide 
+	- as a consequence, if it is not high res, the image will look stretched out and pixelated 
+	- hence the need for density switching 
+3. art direction: providing a modified image to smaller screens, e.g. most common usage is cropping 
