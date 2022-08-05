@@ -44,4 +44,39 @@ html {
 
 And in the same file we make a bunch of color variables in `:root { }`
 
+## Overall Layout
+
+```html
+<div class="container>
+  <header> ... </header>
+  
+  <div class="content">
+    <nav class="sidebar"> ... </nav>
+    <main class="hotel-view">
+      <div class="gallery"> images go here </div>
+      <div class="overview"> </div>
+      <div class="detail"> 
+        <div class="description"> </div>
+        <div class="user-reviews"> </div>
+        <div class="cta"> </div> 
+      </div>
+    </main>
+  </div>
+</div>
+```
+
+Basicall all of these divs are flex containers nested inside flex containers to achieve the layout. 
+
+we set `.content` to flex display and so the two main flex items `nav.sidebar` and `main.hotel-view` are now aligned as a row. 
+
+in order to get `nav.sidebar` to take up the exact width we want it to, we use 
+
+```css
+.sidebar {
+  flex: 0 0 18%;
+}
+```
+
+what this means is flex growth and shrink are set to zero (meaning we dont want it to grow or shrink in relation to the available space in the container) and it will always take up 18% of its container's width 
+
 
