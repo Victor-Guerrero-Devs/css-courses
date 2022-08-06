@@ -124,4 +124,23 @@ they sit on top of everything else as a banner in a row
 
 set the images to `display: block;` so they fill their entire flex item container 
 
+### .overview
+
+This is basically the title section where you have the hotel name, location, and rating 
+
+Very slim row, use flex to align them 
+
+as for the **infinite animation**, this will be applied to `<button class="btn-inline">Albufeira, Portugal</button>` which will make it pulsate as long as the mouse is hovering over it 
+
+```scss
+&:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+```
+
+This is the nested selector for `.btn-line` that provides the infinite animation 
+
+## Hotel Overview pt 2
+
 
