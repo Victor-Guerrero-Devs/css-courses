@@ -79,4 +79,26 @@ in order to get `nav.sidebar` to take up the exact width we want it to, we use
 
 what this means is flex growth and shrink are set to zero (meaning we dont want it to grow or shrink in relation to the available space in the container) and it will always take up 18% of its container's width 
 
+## Header 
+
+Use flexbox to align the logo, search bar, and icons 
+
+Use SVG sprite for icons 
+- sometimes using icons for 3rd part libraries like font awesome aren't that great 
+- although im skeptical about this claim given how popular it is to use them 
+- this guy is saying that sometimes their servers can go down and your website will be left with empty icons 
+
+https://icomoon.io/
+- can download svg icons 
+- can convert icons to svg 
+
+How to use: https://icomoon.io/
+- pick an icon library 
+- select the icons you want 
+- download them as zip 
+- `symbol-defs.svg` = sprite 
+
+Actually, refer to Mosh's section on SVGs and sprites. For some reason they arent showing up. 
+
+
 
