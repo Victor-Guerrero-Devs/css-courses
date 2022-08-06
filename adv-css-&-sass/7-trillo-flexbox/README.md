@@ -145,4 +145,13 @@ This is the nested selector for `.btn-line` that provides the infinite animation
 
 Now that the structure is made, style the typography, the icons and clean up the alignment/padding/margins 
 
+## Description Section pt 1
+
+This section is broken into three mini sections
+- description of hotel 
+- user reviews 
+- cta for booking it 
+
+Therefore `.detail` is a flex container that has three items. 
+
 
