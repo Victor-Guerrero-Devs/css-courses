@@ -100,5 +100,9 @@ How to use: https://icomoon.io/
 
 Actually, refer to Mosh's section on SVGs and sprites. For some reason they arent showing up. 
 
+## Header pt 2
+
+Arrange the the logo, search bar, and user icon notifications w/ flex 
+
 
 
