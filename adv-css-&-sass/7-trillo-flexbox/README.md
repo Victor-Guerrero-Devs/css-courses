@@ -154,4 +154,6 @@ This section is broken into three mini sections
 
 Therefore `.detail` is a flex container that has three items. 
 
+## Description pt 2 
 
+style `.description`
