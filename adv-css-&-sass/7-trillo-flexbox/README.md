@@ -104,5 +104,9 @@ Actually, refer to Mosh's section on SVGs and sprites. For some reason they aren
 
 Arrange the the logo, search bar, and user icon notifications w/ flex 
 
+## Header pt 3 
+
+Use flex again to make the icons on the right end of the header fall into a row and add space between them 
+
 
 
