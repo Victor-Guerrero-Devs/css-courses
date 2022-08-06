@@ -108,5 +108,5 @@ Arrange the the logo, search bar, and user icon notifications w/ flex
 
 Use flex again to make the icons on the right end of the header fall into a row and add space between them 
 
-
+Used absolute positioning to place the notification number OVER the icon 
 
