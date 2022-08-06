@@ -122,4 +122,6 @@ here we place three images as shots of various hotels
 
 they sit on top of everything else as a banner in a row
 
+set the images to `display: block;` so they fill their entire flex item container 
+
 
