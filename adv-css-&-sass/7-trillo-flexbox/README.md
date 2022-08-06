@@ -143,4 +143,6 @@ This is the nested selector for `.btn-line` that provides the infinite animation
 
 ## Hotel Overview pt 2
 
+Now that the structure is made, style the typography, the icons and clean up the alignment/padding/margins 
+
 
