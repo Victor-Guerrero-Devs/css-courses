@@ -110,3 +110,16 @@ Use flex again to make the icons on the right end of the header fall into a row 
 
 Used absolute positioning to place the notification number OVER the icon 
 
+## Hotel Overview pt 1
+
+- how to create an infinite animation 
+- how to use `margin: auto;` w/ flexbox 
+- more flex properties for ez alignment 
+
+### .gallery
+
+here we place three images as shots of various hotels 
+
+they sit on top of everything else as a banner in a row
+
+
