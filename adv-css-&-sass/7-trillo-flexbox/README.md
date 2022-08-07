@@ -157,3 +157,48 @@ Therefore `.detail` is a flex container that has three items.
 ## Description pt 2 
 
 style `.description`
+
+## User Reviews
+
+Here we style the user reviews section 
+
+This flex container has 3 main items: 2 reviews and a button for showing more. 
+
+the reviews also contain a flex container, not for the quote, but for the picture of the reviewer, the reviewers name, and finally their score 
+
+## CTA Section
+
+Basically, I moved `<div class="cta">` outside of `.detail` b/c it was orginally sharing the same row as the other 2. 
+
+By making `cta` a sibling of `detail` instead of a child, i fixed the alignment problem. Now CTA has its own row 
+
+Anyway, the btn has two spans within it. Only one of them is visible at a time. 
+
+When the user hovers over the btn, the visible text moves off screen while the invisible ones moves back onto the screen. 
+
+```scss
+.btn {
+  &__visible {
+        padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+        position: absolute;
+        padding: 2rem 0;
+        left: 0;
+        top: -100%;
+  }
+
+  &:hover {
+        background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+  }
+
+  &:hover &__visible {
+        transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+        top: 0;
+  }
+}
+```
