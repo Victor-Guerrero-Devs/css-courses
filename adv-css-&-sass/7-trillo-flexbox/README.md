@@ -202,3 +202,15 @@ When the user hovers over the btn, the visible text moves off screen while the i
   }
 }
 ```
+
+## Media Queries 
+
+Flex makes creating responsive websites easily. IN the first project when we weren't using flexbox, we needed a lot of css bloat to get things right. 
+
+Flex requires so much less to get the layout you want. Sometimes it is as easy as changing to property to `flex-direction`
+
+There are only two major changes for mobile/tablet viewports
+
+1. the main container that is the parent of everything changes flex-direction to column, making the side navbar go on top of everything 
+
+2. the detail section which has two columns becomes one column, i.e. instead of the hotel description and reviews being side by side, they go on top of each other 
