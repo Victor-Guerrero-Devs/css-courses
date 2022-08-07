@@ -214,3 +214,5 @@ There are only two major changes for mobile/tablet viewports
 1. the main container that is the parent of everything changes flex-direction to column, making the side navbar go on top of everything 
 
 2. the detail section which has two columns becomes one column, i.e. instead of the hotel description and reviews being side by side, they go on top of each other 
+
+Lastly breakpoints are made with the unit `em` to ensure things work as intended. 
