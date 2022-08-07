@@ -216,3 +216,9 @@ There are only two major changes for mobile/tablet viewports
 2. the detail section which has two columns becomes one column, i.e. instead of the hotel description and reviews being side by side, they go on top of each other 
 
 Lastly breakpoints are made with the unit `em` to ensure things work as intended. 
+
+## Conclusion
+
+as of 2022, flexbox is available on 99% of browsers although IE does not currently support gap. 
+
+finally, use the moshify method to bundle your project files to be production ready 
